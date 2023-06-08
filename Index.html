@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        OCR
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <form action="./ocr.php" enctype="multipart/form-data" id="upload" method="POST">
+            <div>
+                <div class="fb-file form-group ">
+                    <input aria-required="true" class="form-control" name="attachment" placeholder="Image" required="required" title="choose your pdf" type="file">
+                    </input>
+                </div>
+                <br>
+                <div class="fb-button form-group ">
+                    <button class="btn btn-success" name="submit" type="submit">
+                        upload
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
